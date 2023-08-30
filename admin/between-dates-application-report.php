@@ -2,11 +2,6 @@
 session_start();
 //error_reporting(0);
 include('includes/dbconnection.php');
-if (strlen($_SESSION['omrsaid']==0)) {
-  header('location:logout.php');
-  } else{
-
-
   ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +58,6 @@ include_once('includes/sidebar.php');
                   <input type="date" class="form-control" id="todate" name="todate" value="" required='true'>
                 </div>
               </div>
-            
              <div class="form-layout-footer mg-t-30">
              <p style="text-align: center;"><button class="btn btn-info mg-r-5"  name="submit" id="submit">Submit</button></p>
                 </form>
@@ -98,4 +92,3 @@ include_once('includes/sidebar.php');
     </script>
   </body>
 </html>
-<?php }  ?>

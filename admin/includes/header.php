@@ -17,11 +17,11 @@
             <div class="dropdown-menu-header">
                <?php 
                         $sql ="SELECT * from  tblregistration where Status is null ";
-$query = $dbh -> prepare($sql);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$totneworder=$query->rowCount();
-?>
+                  $query = $dbh -> prepare($sql);
+                  $query->execute();
+                  $results=$query->fetchAll(PDO::FETCH_OBJ);
+                  $totneworder=$query->rowCount();
+                  ?>
               <label>Notifications</label>
               <a href="new-marriage-application.php"><?php echo htmlentities($totneworder);?></a>
             </div><!-- d-flex -->
@@ -45,9 +45,6 @@ foreach($results as $row)
                  <?php  } ?>
               </a>
               <!-- loop ends here -->
-             
-           
-             
               <div class="media-list-footer">
                 <a href="all-marriage-application.php" class="tx-12"><i class="fa fa-angle-down mg-r-5"></i> Show All Marriage Application</a>
               </div>
@@ -57,25 +54,11 @@ foreach($results as $row)
         <div class="dropdown dropdown-profile">
           <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
             <img src="../img/img3.jpg" class="wd-32 rounded-circle" alt="">
-            <?php
-$aid=$_SESSION['omrsaid'];
-$sql="SELECT AdminName,Email from  tbladmin where ID=:aid";
-$query = $dbh -> prepare($sql);
-$query->bindParam(':aid',$aid,PDO::PARAM_STR);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $row)
-{               ?>
-            <span class="logged-name"><span class="hidden-xs-down"><?php  echo $row->AdminName;?></span> <i class="fa fa-angle-down mg-l-3"></i></span><?php $cnt=$cnt+1;}} ?>
+            <span class="logged-name"><span class="hidden-xs-down">Admin</span> <i class="fa fa-angle-down mg-l-3"></i></span>
           </a>
           <div class="dropdown-menu wd-200">
             <ul class="list-unstyled user-profile-nav">
-              <li><a href="admin-profile.php"><i class="icon ion-ios-person-outline"></i> Edit Profile</a></li>
-              <li><a href="change-password.php"><i class="icon ion-ios-gear-outline"></i> Settings</a></li>
-              <li><a href="logout.php"><i class="icon ion-power"></i> Sign Out</a></li>
+              <li><a href="../user/logout.php"><i class="icon ion-power"></i> Sign Out</a></li>
             </ul>
           </div><!-- dropdown-menu -->
         </div><!-- dropdown -->

@@ -1,4 +1,4 @@
-<?php include 'header.php '  ?>
+<?php include 'header.php'  ?>
 
 <hr>
 <div class="b-example-divider"></div>

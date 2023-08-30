@@ -3,9 +3,7 @@ session_start();
 error_reporting(0);
 include('includes/dbconnection.php');
 error_reporting(0);
-if (strlen($_SESSION['omrsaid']==0)) {
-  header('location:logout.php');
-  } else{
+
 if(isset($_POST['submit']))
 {
 $adminid=$_SESSION['omrsaid'];
@@ -148,4 +146,3 @@ include_once('includes/sidebar.php');
     </script>
   </body>
 </html>
-<?php }  ?>

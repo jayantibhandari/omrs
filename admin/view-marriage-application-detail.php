@@ -2,9 +2,7 @@
 session_start();
 error_reporting(0);
 include('includes/dbconnection.php');
-if (strlen($_SESSION['omrsaid']==0)) {
-  header('location:logout.php');
-  } else{
+
 if(isset($_POST['submit']))
   {
 
@@ -316,4 +314,3 @@ if ($status==""){
     </script>
   </body>
 </html>
-<?php }  ?>
