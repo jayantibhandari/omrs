@@ -86,7 +86,7 @@ foreach($results as $row)
                   </td>
                   <?php } ?>
                    <?php if($row->Status=="Verified"){ ?>
-                  <td><a href="view-marriage-application-detail.php?viewid=<?php echo htmlentities ($row->ID);?>"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                  <td><a href="certifictae.php?viewid=<?php echo htmlentities ($row->ID);?>"><i class="fa fa-download" aria-hidden="true"></i></a></td>
                   <?php } else { ?> 
                     <td><i class="fa fa-exclamation-circle"></i></td> <?php } ?>
                 </tr>

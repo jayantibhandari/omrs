@@ -1,0 +1,45 @@
+---
+FieldType: Text
+FieldName: Husband_name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: wife_name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: w_name1
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: w_name3
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: w_name4
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: w_name2
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: year
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: day
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: date
+FieldFlags: 0
+FieldJustification: Left
