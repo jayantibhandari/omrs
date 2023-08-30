@@ -45,8 +45,8 @@
                                 </div>
                                 <!-- End contact Icon -->
                                 <div class="contact-info">
-                                    <h3>Sri Lanka</h3>
-                                    <p>5353 Road Avenue</p>
+                                    <h3>Nepal</h3>
+                                    
                                 </div>
                                 <!-- End Contact Info -->
                             </div>
@@ -60,7 +60,7 @@
                                 </div>
                                 <!-- End contact Icon -->
                                 <div class="contact-info">
-                                    <h3>94 711 9 5353</h3>
+                                    <h3>+977 9415353999</h3>
                                     <p>Give us a call</p>
                                 </div>
                                 <!-- End Contact Info -->

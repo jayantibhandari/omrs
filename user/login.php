@@ -63,7 +63,8 @@ if (isset($_POST['login'])) {
         <div class="row">
             <div class="img-holder">
                 <div class="bg"></div>
-                <div class="info-holder">
+                <div class="info-holder" style="padding-left:60px;">
+                    
                     <h3>BACK TO HOME</h3>
 
                     <p><br><br>
