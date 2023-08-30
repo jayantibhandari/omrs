@@ -80,7 +80,10 @@ foreach($results as $row)
 <?php } else { ?>                  <td><?php  echo htmlentities($row->Status);?>
                   </td>
                   <?php } ?>
-                  <td><a href="view-marriage-application-detail.php?viewid=<?php echo htmlentities ($row->ID);?>"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                  <?php if($row->Status=="Verified"){ ?>
+                    <td><a href="../user/certificate.php?viewid=<?php echo htmlentities ($row->ID);?>" class="btn btn-primary my-2" target="_blank"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download Certificate</a><br><a href="view-marriage-application-detail.php?viewid=<?php echo htmlentities ($row->ID);?>" class="btn btn-success"><i class="fa fa-eye"></i>&nbsp;View Details</a></td>
+                  <?php } else { ?> 
+                    <td><i class="fa fa-exclamation-circle"></i></td> <?php } ?>
                 </tr>
               <?php $cnt=$cnt+1;}} ?> 
               </tbody>
